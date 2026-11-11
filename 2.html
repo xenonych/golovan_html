@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Галерея</h1>
+
+    <div class="gallery">
+
+        <div class="gallery-column">
+            <div class="gallery-card image-1">
+                <h3>Рисунок 1</h3>
+            </div>
+
+            <div class="gallery-card image-2">
+                <h3>Рисунок 2</h3>
+            </div>
+
+            <div class="gallery-card image-3">
+                <h3>Рисунок 3</h3>
+            </div>
+        </div>
+
+        <div class="gallery-card large image-4">
+            <h3>Рисунок 4</h3>
+        </div>
+
+        <div class="gallery-card large image-5">
+            <h3>Рисунок 5</h3>
+        </div>
+
+    </div>
+
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #164c65;
+    }
+
+    h1 {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    /* 2. Галерея изображений */
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 80px 20px;
+        min-height: 560px;
+        background: #ededed;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .gallery-column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 120px;
+        height: 385px;
+    }
+
+    .gallery-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 14px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-card.large {
+        width: 240px;
+        height: 385px;
+        flex: none;
+    }
+
+    .gallery-card h3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 8px 6px;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        background: rgba(50, 50, 50, 0.35);
+        text-shadow: 1px 1px 3px black;
+    }
+
+    .image-1 {
+        background-image: url("https://picsum.photos/500");
+    }
+
+    .image-2 {
+        background-image: url("https://picsum.photos/501");
+    }
+
+    .image-3 {
+        background-image: url("https://picsum.photos/502");
+    }
+
+    .image-4 {
+        background-image: url("https://picsum.photos/503");
+    }
+
+    .image-5 {
+        background-image: url("https://picsum.photos/504");
+    }
+</style>
+</html>

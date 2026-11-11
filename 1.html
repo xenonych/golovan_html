@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с текстом CSS</title>
+</head>
+<body>
+
+    <h1 class="first">
+        1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </h1>
+
+    <p class="second">
+        2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+
+    <p class="third">
+        3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore cumque molestias, in ducimus obcaecati corporis nam, omnis eaque ex architecto reiciendis enim natus a iure praesentium, mollitia inventore? Quaerat!
+    </p>
+
+    <p class="fourth">
+        4. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="fifth">
+        5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore cumque molestias, in ducimus obcaecati corporis nam, omnis eaque ex architecto reiciendis enim natus a iure praesentium, mollitia inventore? Quaerat!
+    </p>
+
+    <p class="sixth">
+        6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore cumque molestias, in ducimus obcaecati corporis nam, omnis eaque ex architecto reiciendis enim natus a iure praesentium, mollitia inventore? Quaerat!
+    </p>
+
+    <p class="seventh">
+        7. Lorem, ipsum dolor <span class="strike">sit amet</span>,
+        consectetur adipisicing <span class="overline">elit.</span> Laboriosam
+        <span class="underline">dolore</span>.
+    </p>
+
+    <p class="eighth">
+        8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore cumque molestias, in ducimus obcaecati corporis nam, omnis eaque ex architecto reiciendis enim natus a iure praesentium, mollitia inventore? Quaerat!
+    </p>
+
+    <ul class="ninth">
+        <li>9. Lorem</li>
+        <li>Ipsum dolor sit amet</li>
+        <li>Consectetur adipisicing elit.</li>
+    </ul>
+
+</body>
+<style>
+    .first {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .second {
+        font-style: italic;
+    }
+
+    .third {
+        line-height: 2.4;
+        width: 500px;
+    }
+
+    .fourth {
+        letter-spacing: 7px;
+    }
+
+    .fifth {
+        font-family: monospace;
+        width: 500px;
+    }
+
+    .sixth {
+        text-align: right;
+        width: 500px;
+    }
+
+    .seventh .strike {
+        text-decoration: line-through;
+    }
+
+    .seventh .overline {
+        text-decoration: overline;
+    }
+
+    .seventh .underline {
+        text-decoration: underline;
+    }
+
+    .eighth {
+        text-transform: uppercase;
+        width: 500px;
+    }
+
+    .ninth {
+        list-style-type: square;
+    }
+</style>
+</html>

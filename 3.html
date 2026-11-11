@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+    <div class="logo"></div>
+    <form class="search">
+    <input class="search__input" type="text" placeholder="Поиск">
+    <button class="search__button" type="submit">Найти</button>
+    </form>
+    <div class="options">
+    <button class="opions__button">1</button>
+    <button class="opions__button">2</button>
+    <button class="opions__button">3</button>
+    <button class="opions__button">4</button>
+    </div>
+    <div class="login"></div>
+</div>
+    </header>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #164c65;
+    }
+
+    .menu {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 80px 20px;
+        background: #ededed;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo
+    {
+        background-image: url("https://picsum.photos/64");
+    }
+</style>
+</html>
